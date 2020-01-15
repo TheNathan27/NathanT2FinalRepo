@@ -5,7 +5,7 @@ using UnityEngine;
 public class SteveBulletScript : MonoBehaviour
 {
 
-    public float speed = 0.3f;
+    public float speed = 0.1f;
     public float vSpeed;
 
 

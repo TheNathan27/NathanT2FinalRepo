@@ -114,7 +114,7 @@ public class SteveScript: MonoBehaviour
     }
 
     IEnumerator Cooldown1(){
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.03f);
         cooldown1 = true;
     }
 
