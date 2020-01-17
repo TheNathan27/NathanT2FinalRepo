@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class PenguinController : MonoBehaviour
+public class PenguinController : NetworkBehaviour
 {
     private float speed;
     public float hBounds = 14.9f;
@@ -23,6 +24,8 @@ public class PenguinController : MonoBehaviour
     
     void Start()
     {
+        if(!isLocalPlayer)
+            return;
         currentHealth = totalHealth;
         BCollider = GetComponent<BoxCollider>();
         hitBOn = true;
